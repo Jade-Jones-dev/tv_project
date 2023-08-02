@@ -1,8 +1,9 @@
 import React from 'react'
+import './Show.css'
 
 const Show = () => {
   return (
-    <div>Show</div>
+    <div className='show'>Show</div>
   )
 }
 
