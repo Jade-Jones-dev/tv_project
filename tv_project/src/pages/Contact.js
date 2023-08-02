@@ -1,9 +1,16 @@
-import React from 'react'
-import './Contact.css'
+import React from 'react';
+import './Contact.css';
+
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Contact = () => {
   return (
-    <div className='contact'>Contact</div>
+    <div className='contact'>
+      <Header/>
+      Contact
+      <Footer/>
+      </div>
   )
 }
 

@@ -5,6 +5,9 @@ import Cards from "../components/Cards";
 
 import "./Home.css";
 
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
 const Home = () => {
 	const [shows, setShows] = useState([]);
 
@@ -19,17 +22,18 @@ const Home = () => {
 	};
 
 	useEffect(() => {
-		fetchShows();
-		
+		fetchShows();	
 	},[]);
 
-  console.log(shows)
+
 
 	return (
 		<div className='home'>
+			<Header/>
 			<SearchBar />
-			<h4>Home -choose from {shows.length} shows</h4>
+			<h4>{shows.length} shows available</h4>
       <Cards shows={shows}/>
+	  <Footer/>
 		</div>
 	);
 };

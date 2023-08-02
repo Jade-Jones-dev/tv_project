@@ -6,13 +6,9 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Show from './pages/Show';
 
-import Footer from './components/Footer';
-import Header from './components/Header';
 
 function App() {
   return (  
-  <>
-  <Header/>
       <Router>
         <Routes>
           <Route path='/' element={<Home/>}/>
@@ -21,8 +17,6 @@ function App() {
           <Route path='/show' element={<Show/>}/>
         </Routes>
       </Router>
-      <Footer/>
-    </>
   );
 }
 
