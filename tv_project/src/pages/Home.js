@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 
 import SearchBar from "../components/SearchBar";
+import Cards from "../components/Cards";
 
 import "./Home.css";
 
@@ -28,6 +29,7 @@ const Home = () => {
 		<div className='home'>
 			<SearchBar />
 			<h4>Home -choose from {shows.length} shows</h4>
+      <Cards shows={shows}/>
 		</div>
 	);
 };
