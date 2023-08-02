@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className='contact'>
       <Header/>
-      Contact
+    <h4>Contact</h4>
       <Footer/>
       </div>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import './Cards.css'
 
 const Cards = ({shows}) => {
    const renderedShows = shows.map((show) => {
@@ -7,7 +8,7 @@ const Cards = ({shows}) => {
         )
     })
   return (
-    <div>
+    <div className='shows'>
         {renderedShows}
     </div>
   )

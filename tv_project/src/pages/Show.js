@@ -8,7 +8,7 @@ const Show = () => {
   return (
     <div className='show'>
       <Header/>
-      Show
+     <h4>Show</h4>
       <Footer/>
       </div>
   )
