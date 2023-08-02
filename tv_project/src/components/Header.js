@@ -1,12 +1,13 @@
 import React from 'react'
-import {FaFilm} from 'react-icons/fa'
+import { PiTelevisionLight } from "react-icons/pi";
+
 import './Header.css'
 
 const Header = () => {
   return (
     <div className='header'>
-        <FaFilm fontSize={'40px'}/>
-        <h3>Header</h3></div>
+        <PiTelevisionLight fontSize={'50px'}/>
+        <h3>WatchItOnTVNow</h3></div>
   )
 }
 

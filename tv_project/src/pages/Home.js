@@ -1,15 +1,35 @@
-import React from 'react'
+import {useEffect, useState} from "react";
 
-import SearchBar from '../components/SearchBar';
+import SearchBar from "../components/SearchBar";
 
-import './Home.css'
+import "./Home.css";
 
 const Home = () => {
-  return (
-    <div className='home'>
-      <SearchBar/>
-      <h4>Home</h4></div>
-  )
-}
+	const [shows, setShows] = useState([]);
 
-export default Home
+	const fetchShows = () => {
+		fetch("https://api.tvmaze.com/shows")
+			.then((response) => {
+				return response.json();
+			})
+			.then((data) => {
+				setShows(data);
+			});
+	};
+
+	useEffect(() => {
+		fetchShows();
+		
+	},[]);
+
+  console.log(shows)
+
+	return (
+		<div className='home'>
+			<SearchBar />
+			<h4>Home -choose from {shows.length} shows</h4>
+		</div>
+	);
+};
+
+export default Home;
