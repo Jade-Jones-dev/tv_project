@@ -1,4 +1,36 @@
 .shows{
     padding: 0 20px;
-    height:fit-content;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin: 1.5rem;
+    text-align: center;  
+}
+
+img{
+    height:150px;
+    object-fit:fill;
+    border-radius: 15px 15px 0 0;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card h5{
+    padding: 5px 0;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+    padding: 10px;
 }

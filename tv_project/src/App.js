@@ -24,6 +24,8 @@ function App() {
 	useEffect(() => {
 		fetchShows();	
 	},[]);
+
+  console.log(shows)
   return (  
       <Router>
         <Routes>
