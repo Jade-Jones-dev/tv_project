@@ -6,7 +6,7 @@ const ShowsContext = createContext();
 function Provider({children}) {
 	const [shows, setShows] = useState([]);
 	const [filteredShows, setFilteredShows] = useState([]);
-	
+
 	const fetchShows = async () => {
 		const response = await axios.get("https://api.tvmaze.com/shows");
 		setShows(response.data);
@@ -22,12 +22,15 @@ function Provider({children}) {
 		return show.name;
 	}
 
-	const sortShows = () => {
+	const sortShows = (value) => {
 		const sorted = shows.sort((a, b) => {
 			const valueA = getSortValue(a);
 			const valueB = getSortValue(b);
-
-			return valueA.localeCompare(valueB);
+			if (value === "name_ascending") {
+				return valueA.localeCompare(valueB);
+			} else if (value === "name_descending") {
+				return valueB.localeCompare(valueA);
+			}else return filteredShows
 		});
 		setFilteredShows([...sorted]);
 	};
