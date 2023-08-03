@@ -3,7 +3,9 @@ import './SearchBar.css'
 
 const SearchBar = () => {
   return (
-    <div className='searchbar'>SearchBar</div>
+    <div className='searchbar'>
+      Searchbar
+      </div>
   )
 }
 

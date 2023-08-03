@@ -6,7 +6,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-        <FooterLinks/>
+        {/* <FooterLinks/> */}
         <h3>Created using the tvMaze API</h3>
     </div>
   )
