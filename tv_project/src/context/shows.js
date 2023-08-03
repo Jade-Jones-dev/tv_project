@@ -30,7 +30,8 @@ function Provider({children}) {
 				return valueA.localeCompare(valueB);
 			} else if (value === "name_descending") {
 				return valueB.localeCompare(valueA);
-			}else return filteredShows
+			}
+      else return filteredShows
 		});
 		setFilteredShows([...sorted]);
 	};

@@ -1,4 +1,4 @@
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import {useShowsContext} from "../context/shows";
 import "./SearchBar.css";
 
