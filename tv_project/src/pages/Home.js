@@ -15,7 +15,7 @@ const Home = () => {
 		<div className='home'>
 			<Header />
 			<SearchBar />
-			<h4>{shows.length} shows available</h4>
+			<h4 className="length">{shows.length} shows available</h4>
 			<Cards  />
 			{/* <Footer /> */}
 		</div>
