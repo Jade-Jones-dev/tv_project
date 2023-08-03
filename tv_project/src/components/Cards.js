@@ -1,7 +1,10 @@
 import React from 'react'
 import './Cards.css'
+import useShowsContext from '../hooks/useShowsContext'
 
-const Cards = ({shows}) => {
+const Cards = () => {
+const {shows} = useShowsContext();
+
    const renderedShows = shows.map((show) => {
         return (
             <div className='card' key={show.id}>
