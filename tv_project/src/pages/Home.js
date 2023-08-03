@@ -16,7 +16,7 @@ const Home = () => {
 			<Header />
 			<SearchBar />
 			<h4>{shows.length} shows available</h4>
-			<Cards shows={shows} />
+			<Cards  />
 			{/* <Footer /> */}
 		</div>
 	);
