@@ -10,4 +10,32 @@
     justify-content: center;
     z-index: 1000;
   }
-  
+
+  .modal{
+    width:60%;
+    height:60%;
+    background-color: white;
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin: auto;
+    padding: 20px;
+  }
+
+  .modal img{
+    width:200px;
+    height: 100%;
+    border-radius: 0;
+
+  }
+
+  .show_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 20px;
+  }
+
+  .show_content button{
+    width: 100px;
+  }
