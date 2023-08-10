@@ -33,3 +33,15 @@ img{
     align-items: space-evenly;
     padding: 10px;
 }
+
+.card button{
+    margin: 10px auto;
+    padding: 3px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    border-color: none;
+ 
+}
